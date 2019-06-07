@@ -2,6 +2,10 @@ package internal
 
 import "testing"
 
+type Shape interface {
+	Area() float64
+}
+
 func TestPerimeter(t *testing.T) {
 
 	checkArea := func(t *testing.T, shape Shape, want float64) {
