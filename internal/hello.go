@@ -1,4 +1,4 @@
-package cmd
+package internal
 
 import (
 	"fmt"
@@ -32,6 +32,6 @@ func Hello(name string, language string) string {
 	return fmt.Sprintf("%s, %s", prefix, name)
 }
 
-func main() {
+func SayHelloInLanguage() {
 	fmt.Println(Hello("Stephen", "English"))
 }
